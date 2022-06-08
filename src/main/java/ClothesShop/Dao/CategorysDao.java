@@ -14,7 +14,7 @@ public class CategorysDao extends BaseDao{
 	public List<Categorys> GetDataCategorys(){
 		List<Categorys> list = new ArrayList<Categorys>();
 		String sql = "SELECT * FROM categorys";
-		list = _jbdcTemplate.query(sql, new MapperCategorys());
+		list = _jdbcTemplate.query(sql, new MapperCategorys());
 		return list;
 	}
 }
