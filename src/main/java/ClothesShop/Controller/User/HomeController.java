@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import ClothesShop.Service.User.HomeServiceImpl;
 @Controller
 public class HomeController extends BaseController{
 	
@@ -17,9 +16,4 @@ public class HomeController extends BaseController{
 		return _mvShare;
 	}
 
-	@RequestMapping(value = "/product")
-	public ModelAndView Product() {
-		ModelAndView mv = new ModelAndView("user/product");
-		return mv;
-	}
 }
